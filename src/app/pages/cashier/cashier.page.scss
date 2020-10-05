@@ -1,0 +1,112 @@
+ion-content {
+    --background: url('../../../assets/images/fondo.jpg') 0 0/100% 100% no-repeat;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #f4f5f8;
+}
+
+.but-form{
+    top: 30px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icons-form{
+    top: 14px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icons-div{
+    width: 100%;
+    float: left;
+}
+
+.info-form{
+    top: -2px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.number-form{
+    top: -20px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.unids-form{
+    top: -38px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.number-queue{
+    text-align: center;
+    font-weight: bold;
+    color: #0094FF;
+}
+
+.position-queue{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #0094FF;
+}
+
+.big-icon{
+    font-size: 2em;
+    width: 50%;
+    float: left;
+}
+
+.small-icon{
+    font-size: 0.6em;
+    width: 50%;
+    font-weight: bold;
+    float: left;
+}
+
+.buttons-form{
+    top: -58px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.buttons-main{
+    width: 80%;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.buttons-end{
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.logo-end{
+    position:fixed; 
+    bottom: 5px;
+    height: 75px;
+    width: 100%;
+}

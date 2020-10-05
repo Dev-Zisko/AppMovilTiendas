@@ -1,0 +1,31 @@
+<ion-content>
+
+    <ion-img class="logo" src="../../../assets/images/logo.png"></ion-img>
+
+    <ion-footer class="logo-login" no-border>
+        <ion-icon class="big-icon" name="contact" color="light"></ion-icon>
+    </ion-footer>
+
+    <ion-footer class="form-inputs" no-border>
+        <ion-item class="bottom-inputs" color="light">
+            <ion-label><ion-icon name="mail" color="primary"></ion-icon></ion-label>
+            <ion-input required type="email" [(ngModel)]="user.email" placeholder="Correo electrónico"></ion-input>
+        </ion-item>
+    
+        <ion-item class="bottom-inputs" color="light">
+            <ion-label><ion-icon name="lock" color="primary"></ion-icon></ion-label>
+            <ion-input required type="password" [(ngModel)]="user.password" placeholder="Contraseña"></ion-input>
+        </ion-item>
+        
+        <ion-button class="bottom-button" color="primary" (click)="login()"><ion-icon name="log-in" color="light"></ion-icon> Entrar</ion-button>
+    </ion-footer>
+
+    <ion-footer class="margin-options" no-border >
+        <ion-label class="options" color="primary" routerLink="/register"><ion-icon name="person-add"></ion-icon> Registrarse</ion-label>
+    </ion-footer>
+
+    <ion-footer class="margin-options" no-border>
+        <ion-label class="options" color="primary" routerLink="/password"><ion-icon name="key"></ion-icon> Olvide mi contraseña</ion-label>
+    </ion-footer>
+
+</ion-content>

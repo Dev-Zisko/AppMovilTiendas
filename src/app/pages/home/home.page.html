@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-searchbar placeholder="Buscar..."></ion-searchbar>
+
+  <ion-list>
+    <ion-item lines="none" routerLink="/rapicola" *ngFor="let item of items" (click)="infoQueue(item['id'], item['nombre'], item['latitud'], item['longitud'])">
+      <ion-avatar slot="start">
+      <img src="{{ storageUri + item['logo'] }}">
+      </ion-avatar>
+      <ion-label>
+      <ion-label class="title-label">{{ item['nombre'] }}</ion-label>
+      <ion-label class="medium-label"><ion-icon name="people" color="primary"></ion-icon> {{ item['0'] }} personas</ion-label>
+        <ion-label><ion-icon name="alarm" color="primary"></ion-icon> {{ item['1'] }} minutos</ion-label>
+        <ion-label><ion-icon name="pin" color="primary"></ion-icon> {{ item['direccion'] }}</ion-label>
+      </ion-label>
+      <hr size="1px" color="#0094FF" />
+    </ion-item>
+  </ion-list>
+
+</ion-content>

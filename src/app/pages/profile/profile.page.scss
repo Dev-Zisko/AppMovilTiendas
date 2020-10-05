@@ -1,0 +1,49 @@
+ion-content {
+    --background: url('../../../assets/images/fondo.jpg') 0 0/100% 100% no-repeat;
+}
+
+ion-item{
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.form-register{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.head-label{
+    font-size: 0.8em;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.head-icon{
+    font-size: 0.8em;
+}
+
+.dialog-alert{
+    background-color: #1E1E1E;
+    width: 75%;
+    margin: 0 auto;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom-inputs{
+    margin-bottom: 10px;
+}
+
+.bottom-button{
+    margin-bottom: 10px;
+}
+
+.logo-end{
+    position:fixed; 
+    bottom: 5px;
+    height: 75px;
+    width: 100%;
+}

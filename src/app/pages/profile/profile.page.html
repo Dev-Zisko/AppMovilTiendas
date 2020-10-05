@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Perfil de usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-footer class="form-register" no-border>
+    <ion-item class="bottom-inputs" color="light">
+      <ion-label><ion-icon name="card" color="primary"></ion-icon></ion-label>
+      <ion-input required type="number" [(ngModel)]="user.idcard" placeholder="Número de cédula" disabled></ion-input>
+    </ion-item>
+
+    <ion-item class="bottom-inputs" color="light">
+      <ion-label><ion-icon name="person" color="primary"></ion-icon></ion-label>
+      <ion-input required type="text" [(ngModel)]="user.name" placeholder="Nombre"></ion-input>
+      <ion-label><ion-icon name="finger-print" color="primary"></ion-icon></ion-label>
+      <ion-input required type="text" [(ngModel)]="user.lastname" placeholder="Apellido"></ion-input>
+    </ion-item>
+
+    <ion-item class="bottom-inputs" color="light">
+      <ion-label><ion-icon name="phone-portrait" color="primary"></ion-icon></ion-label>
+      <ion-input required type="number" [(ngModel)]="user.cellphone" placeholder="Número de teléfono"></ion-input>
+    </ion-item>
+
+    <ion-item class="bottom-inputs" color="light">
+      <ion-label><ion-icon name="mail" color="primary"></ion-icon></ion-label>
+      <ion-input required type="email" [(ngModel)]="user.email" placeholder="Correo electrónico" disabled></ion-input>
+    </ion-item>
+
+    <ion-item class="bottom-inputs" color="light">
+        <ion-label><ion-icon name="lock" color="primary"></ion-icon></ion-label>
+        <ion-input required type="password" [(ngModel)]="user.password" placeholder="Contraseña"></ion-input>
+    </ion-item>
+
+    <ion-item class="bottom-inputs" color="light">
+      <ion-label><ion-icon name="lock" color="primary"></ion-icon></ion-label>
+      <ion-input required type="password" [(ngModel)]="user.repeatpassword" placeholder="Repetir contraseña"></ion-input>
+    </ion-item>
+
+    <ion-footer class="dialog-alert" no-border>
+      <ion-icon class="head-icon" color="danger" name="alert"></ion-icon>
+      <ion-label class="head-label"> Deje igual o vacíos los campos</ion-label>
+      <br/>
+      <ion-label class="head-label">que no quiere editar. </ion-label>
+    </ion-footer>
+
+    <ion-button class="bottom-button" color="primary" (click)="editProfile()"><ion-icon name="save" color="light"></ion-icon> Guardar</ion-button>
+  </ion-footer>
+
+  <ion-img class="logo-end" src="../../../assets/images/logo.png"></ion-img>
+
+</ion-content>
